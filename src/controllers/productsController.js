@@ -38,7 +38,7 @@ async function getProductById(req, res) {
   } catch (error) {
     console.error('Error al obtener el producto:', error);
 
-    // Manejar errores específicos, por ejemplo, si el archivo no existe
+    
     if (error.code === 'ENOENT') {
       res.status(500).json({ error: 'Error: el archivo de productos no existe' });
     } else {

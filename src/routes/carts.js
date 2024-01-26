@@ -1,4 +1,4 @@
-// src/routes/carts.js
+
 const express = require('express');
 const cartsController = require('../controllers/cartsController');
 

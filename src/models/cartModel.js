@@ -1,4 +1,4 @@
-// src/models/cartModel.js
+
 
 class Cart {
     constructor(id, products) {

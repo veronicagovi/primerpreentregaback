@@ -1,4 +1,4 @@
-// src/controllers/cartsController.js
+
 const fs = require('fs/promises');
 
 async function createCart(req, res) {
@@ -55,10 +55,10 @@ async function addProductToCart(req, res) {
       const productIndex = carts[cartIndex].products.findIndex(p => p.product == productId);
 
       if (productIndex !== -1) {
-        // Producto existente, incrementar la cantidad
+        
         carts[cartIndex].products[productIndex].quantity += quantity;
       } else {
-        // Producto no existente, agregarlo al carrito
+        
         carts[cartIndex].products.push({
           product: productId,
           quantity: quantity,
