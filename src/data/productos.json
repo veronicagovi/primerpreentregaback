@@ -1,0 +1,143 @@
+[
+  {
+    "id": "1",
+    "title": "Honda CBR1000RR",
+    "description": "Deportiva de alta gama de Honda",
+    "code": "H001",
+    "price": 15000,
+    "color": "Rojo",
+    "model": "2022",
+    "stock": 20,
+    "thumbnails": [
+      "url1",
+      "url2"
+    ]
+  },
+  {
+    "id": "2"
+  },
+  {
+    "id": "3",
+    "title": "BMW S1000RR",
+    "description": "Motocicleta deportiva de BMW",
+    "code": "B001",
+    "price": 18000,
+    "color": "Azul",
+    "model": "2022",
+    "stock": 12,
+    "thumbnails": [
+      "url5",
+      "url6"
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Kawasaki Ninja ZX-10R",
+    "description": "Superbike de Kawasaki con tecnología avanzada",
+    "code": "K001",
+    "price": 16000,
+    "color": "Verde",
+    "model": "2022",
+    "stock": 18,
+    "thumbnails": [
+      "url7",
+      "url8"
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Yamaha MT-09",
+    "description": "Naked bike versátil y potente de Yamaha",
+    "code": "Y001",
+    "price": 12000,
+    "color": "Gris",
+    "model": "2022",
+    "stock": 25,
+    "thumbnails": [
+      "url9",
+      "url10"
+    ]
+  },
+  {
+    "id": "6",
+    "title": "Ducati Panigale V4",
+    "description": "Superbike de alto rendimiento de Ducati",
+    "code": "D001",
+    "price": 22000,
+    "color": "Rojo",
+    "model": "2022",
+    "stock": 18,
+    "thumbnails": [
+      "url11",
+      "url12"
+    ]
+  },
+  {
+    "id": "7",
+    "title": "Suzuki GSX-R1000",
+    "description": "Deportiva ágil y potente de Suzuki",
+    "code": "S001",
+    "price": 14000,
+    "color": "Azul y blanco",
+    "model": "2022",
+    "stock": 15,
+    "thumbnails": [
+      "url13",
+      "url14"
+    ]
+  },
+  {
+    "id": "8",
+    "title": "Triumph Bonneville T120",
+    "description": "Clásica moderna de Triumph con estilo retro",
+    "code": "T001",
+    "price": 11000,
+    "color": "Negro",
+    "model": "2022",
+    "stock": 10,
+    "thumbnails": [
+      "url15",
+      "url16"
+    ]
+  },
+  {
+    "id": "9",
+    "title": "Aprilia Tuono V4 1100",
+    "description": "Naked bike agresiva y potente de Aprilia",
+    "code": "A001",
+    "price": 19000,
+    "color": "Blanco",
+    "model": "2022",
+    "stock": 14,
+    "thumbnails": [
+      "url17",
+      "url18"
+    ]
+  },
+  {
+    "id": "10",
+    "title": "KTM 1290 Super Duke R",
+    "description": "Naked bike extrema y tecnológica de KTM",
+    "code": "K002",
+    "price": 20000,
+    "color": "Naranja",
+    "model": "2022",
+    "stock": 8,
+    "thumbnails": [
+      "url19",
+      "url20"
+    ]
+  },
+  {
+    "id": "1706232102292"
+  },
+  {
+    "id": "1706232198414"
+  },
+  {
+    "id": "1706232261732"
+  },
+  {
+    "id": "1706232819128"
+  }
+]
