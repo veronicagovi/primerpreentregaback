@@ -14,7 +14,18 @@
     ]
   },
   {
-    "id": "2"
+    "id": "2",
+    "title": "Harley-Davidson Street Glide",
+    "description": "Cruiser icónica de Harley-Davidson",
+    "code": "HD001",
+    "price": 25000,
+    "color": "Negro",
+    "model": "2022",
+    "stock": 15,
+    "thumbnails": [
+      "url3",
+      "url4"
+    ]
   },
   {
     "id": "3",
@@ -129,15 +140,7 @@
     ]
   },
   {
-    "id": "1706232102292"
-  },
-  {
-    "id": "1706232198414"
-  },
-  {
-    "id": "1706232261732"
-  },
-  {
-    "id": "1706232819128"
+    "title": "moto11",
+    "id": "11"
   }
 ]

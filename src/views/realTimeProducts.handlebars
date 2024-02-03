@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Products</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        button[type="submit"] {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Productos en Tiempo Real</h1>
+    <ul id="productList">
+        {{#each products}}
+            <li data-id="{{this.id}}">{{this.title}} (ID: {{this.id}})</li>
+        {{/each}}
+    </ul>
+
+    <form id="addProductForm">
+        <input type="text" name="title" placeholder="Título del Producto">
+       
+        <button type="submit">Agregar Producto</button>
+    </form>
+
+    <form id="deleteProductForm">
+        <input type="number" name="productId" placeholder="ID del Producto">
+        <button type="submit">Eliminar Producto</button>
+    </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+
+        
+        document.getElementById('addProductForm').addEventListener('submit', (event) => {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            const product = Object.fromEntries(formData.entries());
+            socket.emit('addProduct', product);
+            
+            event.target.reset();
+        });
+
+        
+        document.getElementById('deleteProductForm').addEventListener('submit', (event) => {
+            event.preventDefault();
+            const productId = parseInt(event.target.productId.value); 
+            socket.emit('deleteProduct', productId);
+        });
+
+       
+        socket.on('productAdded', (product) => {
+            const productList = document.getElementById('productList');
+            const listItem = document.createElement('li');
+            listItem.dataset.id = product.id;
+            listItem.textContent = product.title + ' (ID: ' + product.id + ')';
+            productList.appendChild(listItem);
+        });
+
+        socket.on('productDeleted', (productId) => {
+            const productList = document.getElementById('productList');
+            const listItem = productList.querySelector(`[data-id="${productId}"]`);
+            if (listItem) {
+                listItem.remove();
+            }
+        });
+    </script>
+</body>
+</html>
